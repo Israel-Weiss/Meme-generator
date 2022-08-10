@@ -1,0 +1,13 @@
+.search-navigator {
+    background-color: white;
+}
+
+.search-nav-list > * {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.search-nav-list :hover {
+    cursor: pointer;
+    color: var(--color3);
+}

@@ -1,0 +1,21 @@
+.logo-container{
+    background-color: var(--color1);
+}
+
+.main-nav-list > * {
+    font-size: 19px;
+    margin: 10px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.main-nav-list li {
+    color: var(--color2);
+}
+
+.main-nav-list :hover {
+    cursor: pointer;
+    color: var(--color3);
+}

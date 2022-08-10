@@ -1,0 +1,62 @@
+.logo-container{
+    background-color: var(--color1);
+}
+
+
+.main-nav-list > * {
+    font-size: 19px;
+    margin: 10px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.main-nav-list li {
+    color: var(--color2);
+}
+
+.main-nav-list :hover {
+    cursor: pointer;
+    color: var(--color3);
+}
+
+.search-navigator {
+    background-color: white;
+}
+
+.search-nav-list > * {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.search-nav-list :hover {
+    cursor: pointer;
+    color: var(--color3);
+}
+
+.main-container {
+    margin-top: 70px;
+}
+
+.grid-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-container > * {
+    width: 100%;
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.edit-container {
+    border: 1px solid black;
+    height: 40vw;
+    width: 80vw;
+    font-size: 10vw;
+}
+

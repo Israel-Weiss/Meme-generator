@@ -1,0 +1,22 @@
+.main-container {
+    margin-top: 70px;
+    height: 60vh;
+}
+
+.edit-container {
+    border: 1px solid black;
+    display: flex;
+    height: 31vw;
+    width: 62vw;
+    font-size: 1vw;
+    margin: auto;
+}
+
+.edit-container img {
+    width: 50%;
+}
+
+.edit-grid {
+    width: 40%;
+    margin: auto;
+}
