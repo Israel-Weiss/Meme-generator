@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="gallery-head">
         <div class="logo-container">
             <div class="main-layout flex space-between align-center">
                 <img class="logo" src="img/LOGO.png" alt="">
                 <nav class="main-nav">
                     <ul class="main-nav-list flex clean-list">
-                        <li onclick="12()">Gallery</li>
+                        <li>Gallery</li>
                         <li onclick="12()">About</li>
                     </ul>
                 </nav>
@@ -38,33 +38,84 @@
         </div>
     </header>
 
-    <main>
-        <div class="main-layout grid-container">
-            <img src="img/1.jpg" alt="">
-            <img src="img/2.jpg" alt="">
-            <img src="img/3.jpg" alt="">
-            <img src="img/4.jpg" alt="">
-            <img src="img/5.jpg" alt="">
-            <img src="img/6.jpg" alt="">
-            <img src="img/7.jpg" alt="">
-            <img src="img/8.jpg" alt="">
-            <img src="img/9.jpg" alt="">
-            <img src="img/10.jpg" alt="">
-            <img src="img/11.jpg" alt="">
-            <img src="img/12.jpg" alt="">
-            <img src="img/13.jpg" alt="">
-            <img src="img/14.jpg" alt="">
-            <img src="img/15.jpg" alt="">
-            <img src="img/16.jpg" alt="">
-            <img src="img/17.jpg" alt="">
-            <img src="img/18.jpg" alt="">
-            <img src="img/19.jpg" alt="">
+    <main class="gallery-main">
+        <div class="grid-container">
+            <img src="img/1.jpg" alt="" onclick="onEditImage(1)">
+            <img src="img/2.jpg" alt="" onclick="onEditImage(2)">
+            <img src="img/3.jpg" alt="" onclick="onEditImage(3)">
+            <img src="img/4.jpg" alt="" onclick="onEditImage(4)">
+            <img src="img/5.jpg" alt="" onclick="onEditImage(5)">
+            <img src="img/6.jpg" alt="" onclick="onEditImage(6)">
+            <img src="img/7.jpg" alt="" onclick="onEditImage(7)">
+            <img src="img/8.jpg" alt="" onclick="onEditImage(8)">
+            <img src="img/9.jpg" alt="" onclick="onEditImage(9)">
+            <img src="img/10.jpg" alt="" onclick="onEditImage(10)">
+            <img src="img/11.jpg" alt="" onclick="onEditImage(11)">
+            <img src="img/12.jpg" alt="" onclick="onEditImage(12)">
+            <img src="img/13.jpg" alt="" onclick="onEditImage(13)">
+            <img src="img/14.jpg" alt="" onclick="onEditImage(14)">
+            <img src="img/15.jpg" alt="" onclick="onEditImage(15)">
+            <img src="img/16.jpg" alt="" onclick="onEditImage(16)">
+            <img src="img/17.jpg" alt="" onclick="onEditImage(17)">
+            <img src="img/18.jpg" alt="" onclick="onEditImage(18)">
+            <img src="img/19.jpg" alt="" onclick="onEditImage(19)">
         </div>
     </main>
-    <footer class="flex align-center justify-center">
+    <footer class="flex align-center justify-center gallery-foot">
         <img class="logo" src="img/LOGO.png" alt="">
     </footer>
 
+    <div class="modal">
+        <header>
+            <div class="logo-container">
+                <div class="main-layout flex space-between align-center">
+                    <img class="logo" src="img/LOGO.png" alt="">
+                    <nav class="main-nav">
+                        <ul class="main-nav-list flex clean-list">
+                            <li onclick="onCloseModal()">Gallery</li>
+                            <li onclick="12()">About</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container flex space-between align-center">
+            <div class="edit-container">
+                <div class="edit-img">
+                    <img src="img/5.jpg" alt="" class="img-in">
+                </div>
+                <section>
+                    <div class="grid-edit flex">
+                        <div class="text-input"></div>
+                        <div class="move-line-down">&#129095;</div>
+                        <div class="move-line-up">&#129093;</div>
+                        <div class="swich-lines">&#8693;</div>
+                        <div class="add-line">➕</div>
+                        <div class="delte-line">🗑</div>
+                        <div class="fontp">A+</div>
+                        <div class="font-">A-</div>
+                        <div class="align-left">LE</div>
+                        <div class="align-center">CE</div>
+                        <div class="align-right">RI</div>
+                        <div class="impact">impact</div>
+                        <div class="text-efect">A</div>
+                        <div class="text-color">CO</div>
+                        <div class="stikers">
+                            < 😀🎃🔔😺>
+                        </div>
+                        <div class="share">Share</div>
+                        <div class="downlowd">Down</div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer flex align-center justify-center">
+            <img class="logo" src="img/LOGO.png" alt="">
+        </footer>
+    </div>
+
 </body>
 
+<script src="js/main.js"></script>
 </html>

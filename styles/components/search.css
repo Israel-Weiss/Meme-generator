@@ -3,8 +3,8 @@
 }
 
 .search-nav-list > * {
-    font-size: 30px;
-    margin: 20px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 .search-nav-list :hover {
