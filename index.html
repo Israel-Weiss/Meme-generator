@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body onload="init()">
     <header class="gallery-head">
         <div class="logo-container">
             <div class="main-layout flex space-between align-center">
                 <img class="logo" src="img/LOGO.png" alt="">
                 <nav class="main-nav">
                     <ul class="main-nav-list flex clean-list">
-                        <li>Gallery</li>
+                        <li onmousedown="onCloseModal()">Gallery</li>
                         <li onclick="12()">About</li>
                     </ul>
                 </nav>
@@ -72,7 +72,7 @@
                     <img class="logo" src="img/LOGO.png" alt="">
                     <nav class="main-nav">
                         <ul class="main-nav-list flex clean-list">
-                            <li onclick="onCloseModal()">Gallery</li>
+                            <li onmousedown="onCloseModal()">Gallery</li>
                             <li onclick="12()">About</li>
                         </ul>
                     </nav>
@@ -82,17 +82,19 @@
 
         <main class="main-container flex space-between align-center">
             <div class="edit-container">
-                <div class="edit-img">
-                    <img src="img/5.jpg" alt="" class="img-in">
-                </div>
+                <canvas id="canvas" width="150"></canvas>
+
                 <section>
                     <div class="grid-edit flex">
-                        <div class="text-input"></div>
+                        <form class="text-input" onkeypress="textInput(event)">
+                            <input type="text" name="todo-txt" placeholder="Enter text" />
+                        </form>
+                    
                         <div class="move-line-down">&#129095;</div>
                         <div class="move-line-up">&#129093;</div>
                         <div class="swich-lines">&#8693;</div>
-                        <div class="add-line">➕</div>
-                        <div class="delte-line">🗑</div>
+                        <div class="add-line" onclick="drawText(75, 10)">➕</div>
+                        <div class="delte-line" onclick="clearCanvas()">🗑</div>
                         <div class="fontp">A+</div>
                         <div class="font-">A-</div>
                         <div class="align-left">LE</div>
@@ -102,10 +104,12 @@
                         <div class="text-efect">A</div>
                         <div class="text-color">CO</div>
                         <div class="stikers">
-                            < 😀🎃🔔😺>
+                            < 😀🎃🔔😺 >
                         </div>
                         <div class="share">Share</div>
-                        <div class="downlowd">Down</div>
+                        <a href="#" onclick="downloadCanvas(this)" download="canvas" class="downlowd">Download</a>
+
+                        <!-- <div class="downlowd" onclick="downloadImg()">Download</div> -->
                 </section>
             </div>
         </main>
