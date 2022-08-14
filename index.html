@@ -28,68 +28,33 @@
                     <input type="text" name="search-txt" placeholder="enter search keyword   🔍">
                 </form>
                 <ul class="search-nav-list flex clean-list">
-                    <li class="keyword" onclick="12()">Nature</li>
-                    <li class="keyword" onclick="12()">View</li>
-                    <li class="keyword" onclick="12()">people</li>
-                    <li class="keyword" onclick="12()">funny</li>
+                    <li class="keyword" onclick="filterGallery('animals')">Animals</li>
+                    <li class="keyword" onclick="filterGallery('food')">Food</li>
+                    <li class="keyword" onclick="filterGallery('view')">View</li>
+                    <li class="keyword" onclick="filterGallery('nature')">Nature</li>
+                    <li class="keyword" onclick="renderGallery(gImgs)">All</li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
     <main class="gallery-main">
         <div class="grid-container">
-            <img src="img/1.jpg" alt="" onclick="onEditImage(1)">
-            <img src="img/2.jpg" alt="" onclick="onEditImage(2)">
-            <img src="img/3.jpg" alt="" onclick="onEditImage(3)">
-            <img src="img/4.jpg" alt="" onclick="onEditImage(4)">
-            <img src="img/5.jpg" alt="" onclick="onEditImage(5)">
-            <img src="img/6.jpg" alt="" onclick="onEditImage(6)">
-            <img src="img/7.jpg" alt="" onclick="onEditImage(7)">
-            <img src="img/8.jpg" alt="" onclick="onEditImage(8)">
-            <img src="img/9.jpg" alt="" onclick="onEditImage(9)">
-            <img src="img/10.jpg" alt="" onclick="onEditImage(10)">
-            <img src="img/11.jpg" alt="" onclick="onEditImage(11)">
-            <img src="img/12.jpg" alt="" onclick="onEditImage(12)">
-            <img src="img/13.jpg" alt="" onclick="onEditImage(13)">
-            <img src="img/14.jpg" alt="" onclick="onEditImage(14)">
-            <img src="img/15.jpg" alt="" onclick="onEditImage(15)">
-            <img src="img/16.jpg" alt="" onclick="onEditImage(16)">
-            <img src="img/17.jpg" alt="" onclick="onEditImage(17)">
-            <img src="img/18.jpg" alt="" onclick="onEditImage(18)">
-            <img src="img/19.jpg" alt="" onclick="onEditImage(19)">
         </div>
     </main>
-    <footer class="flex align-center justify-center gallery-foot">
-        <img class="logo" src="img/LOGO.png" alt="">
-    </footer>
 
     <div class="modal">
-        <header>
-            <div class="logo-container">
-                <div class="main-layout flex space-between align-center">
-                    <img class="logo" src="img/LOGO.png" alt="">
-                    <nav class="main-nav">
-                        <ul class="main-nav-list flex clean-list">
-                            <li onmousedown="onCloseModal()">Gallery</li>
-                            <li onclick="12()">About</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
 
         <main class="main-container flex space-between align-center">
             <div class="edit-container">
-                <canvas id="canvas" width="150"></canvas>
+                <canvas id="canvas" width="500" height="500"></canvas>
 
                 <section>
                     <div class="grid-edit flex">
                         <form class="text-input" onkeypress="textInput(event)">
                             <input type="text" name="todo-txt" placeholder="Enter text" />
                         </form>
-                    
+
                         <div class="move-line-down">&#129095;</div>
                         <div class="move-line-up">&#129093;</div>
                         <div class="swich-lines">&#8693;</div>
@@ -104,7 +69,7 @@
                         <div class="text-efect">A</div>
                         <div class="text-color">CO</div>
                         <div class="stikers">
-                            < 😀🎃🔔😺 >
+                            < 😀🎃🔔😺>
                         </div>
                         <div class="share">Share</div>
                         <a href="#" onclick="downloadCanvas(this)" download="canvas" class="downlowd">Download</a>
@@ -113,13 +78,15 @@
                 </section>
             </div>
         </main>
-
-        <footer class="footer flex align-center justify-center">
-            <img class="logo" src="img/LOGO.png" alt="">
-        </footer>
     </div>
+    
+    <footer class="flex align-center justify-center gallery-foot">
+        <img class="logo" src="img/LOGO.png" alt="">
+    </footer>
 
 </body>
 
-<script src="js/main.js"></script>
+<script src="js/service.js"></script>
+<script src="js/controler.js"></script>
+
 </html>

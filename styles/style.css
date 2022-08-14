@@ -3,7 +3,7 @@
 @import "layout.css";
 @import "base.css";
 @import "components/edit.css";
-@import "components/footer.css";
-@import "components/logo.css";
+@import "components/grid-edit.css";
+@import "mq.css";
+@import "components/header.css";
 @import "components/main-gallery.css";
-@import "components/search.css";
